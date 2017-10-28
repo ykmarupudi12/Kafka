@@ -14,7 +14,7 @@ public class main {
         props.put("zookeeper.connect", "zookeeper1:2181, zookeeper2:2181, zookeeper3:2181");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-        props.put("bootstrap.servers", "kafka1:9092, kafka2:9092");
+        props.put("bootstrap.servers", "kafka1:9092, kafkabroker:9092");
 
         Producer producer = new KafkaProducer<String, String>(props);
 
